@@ -10,7 +10,7 @@
 
     <div class="login-container">
         <h2>Login</h2>
-        <form action="homepage.php" method="POST">
+        <form action="index.php" method="POST">
             <input type="email" name="email" class="input-field" placeholder="Email" required>
             <input type="password" name="password" class="input-field" placeholder="Password" required>
             <button type="submit" class="login-btn">Login</button>

@@ -8,8 +8,8 @@
     <!-- Bootstrap CSS CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS (optional) test -->
-    <link rel="stylesheet" href="../css/homepage.css">
+    <!-- Custom CSS (optional) -->
+    <link rel="stylesheet" href="../css/index.css">
 
     
 </head>
@@ -23,18 +23,15 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto"> <!-- Use ml-auto to push the menu to the right -->
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="menu.html">Menu</a>
+                        <a class="nav-link" href="menu.php">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="order.php">Order</a>
                     </li>
                 </ul>
             </div>
@@ -111,17 +108,6 @@
         </div>
     </div>
 
-    <!-- Contact Section -->
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Contact Us</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-center">
-                <p><strong>Visit us at:</strong> 123 Coffee Street, Mocha Town</p>
-                <p><strong>Call us:</strong> (555) 123-4567</p>
-                <p><strong>Email:</strong> info@coffeebliss.com</p>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer Section -->
     <div class="footer mt-5">
