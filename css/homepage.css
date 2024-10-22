@@ -1,0 +1,32 @@
+.banner {
+    background-color: #4b2e83;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+.menu-item {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+.footer {
+    background-color: #4b2e83;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.about-section {
+    max-width: 600px; 
+    margin: 0 auto;   
+    padding: 50px;    
+}
+
+.about-section img {
+    max-width: 100%; 
+    height: auto;
+}
