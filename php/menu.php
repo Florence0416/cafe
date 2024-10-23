@@ -43,76 +43,105 @@
         <div class="row">
             <div class="col-md-9"> <!-- Menu Column -->
                 <div class="row" id="menu">
-                    <div class="col-md-4">
-                        <div class="card mb-3">
-                            <img src="../images/Ro-Ro-Rosie-Frappe.png" alt="Ro-Ro-Rosie-Frappe" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <h2 class="card-title text-center">Espresso</h2>
-                                <p class="card-text text-center">$2.50</p>
-                                <button class="btn btn-success" onclick="addToOrder('Espresso', 2.50)">Add to Order</button>
-                            </div>
+                <div class="col-md-4">
+                    <div class="card mb-3" style="height: 400px;">
+                        <img src="../images/Ro-Ro-Rosie-Frappe.png" alt="Ro-Ro-Rosie-Frappe" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                            <h2 class="card-title text-center" style="font-size: 1.3rem;">Ro-Ro-Rosie Frappé</h2> 
+                            <p class="card-text text-center">RM 9.60</p>
+                            <button class="btn btn-success mt-auto" style="position: relative;" onclick="addToOrder('Ro-Ro-Rosie-Frappe', 9.60)">Buy now</button> 
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-3">
-                            <img src="../images/Iced-Rosie-Latte.png" alt="Iced-Rosie-Latte" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <h2 class="card-title text-center">Latte</h2>
-                                <p class="card-text text-center">$3.50</p>
-                                <button class="btn btn-success" onclick="addToOrder('Latte', 3.50)">Add to Order</button>
-                            </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-3" style="height: 400px;">
+                        <img src="../images/Iced-Rosie-Latte.png" alt="Iced-Rosie-Latte" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                            <h2 class="card-title text-center" style="font-size: 1.3rem;">Rosie Latté</h2> 
+                            <p class="card-text text-center">RM 8.50</p>
+                            <button class="btn btn-success mt-auto" style="position: relative;" onclick="addToOrder('Iced-Rosie-Latte', 8.50)">Buy now</button>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-3">
-                            <img src="../images/Ro-Ro-Rosie-Frappe.png" alt="Cappuccino" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <h2 class="card-title text-center">Cappuccino</h2>
-                                <p class="card-text text-center">$3.00</p>
-                                <button class="btn btn-success" onclick="addToOrder('Cappuccino', 3.00)">Add to Order</button>
-                            </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-3" style="height: 400px;">
+                        <img src="../images/Iced-Rosie-Cham-Latte.png" alt="Iced-Rosie-Cham-Latte" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                            <h2 class="card-title text-center" style="font-size: 1.3rem;">Rosie Cham Latté</h2> 
+                            <p class="card-text text-center">RM 9.00</p>
+                            <button class="btn btn-success mt-auto" style="position: relative;" onclick="addToOrder('Rosie-Cham-Latté', 9.00)">Buy now</button>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-3">
-                            <img src="../images/Iced-Rosie-Latte.png" alt="Mocha" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <h2 class="card-title text-center">Mocha</h2>
-                                <p class="card-text text-center">$4.00</p>
-                                <button class="btn btn-success" onclick="addToOrder('Mocha', 4.00)">Add to Order</button>
-                            </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-3" style="height: 400px;">
+                        <img src="../images/Pumpkin-Spice-Frappe.png" alt="Pumpkin-Spice-Frappe" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                            <h2 class="card-title text-center" style="font-size: 1.3rem;">Pumpkin Spice Frappe</h2> 
+                            <p class="card-text text-center">RM 13.00</p>
+                            <button class="btn btn-success mt-auto" style="position: relative;" onclick="addToOrder('Pumpkin-Spice-Frappe', 13.00)">Buy now</button>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-3">
-                            <img src="../images/Iced-Rosie-Latte.png" alt="Mocha" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <h2 class="card-title text-center">Mocha</h2>
-                                <p class="card-text text-center">$4.00</p>
-                                <button class="btn btn-success" onclick="addToOrder('Mocha', 4.00)">Add to Order</button>
-                            </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-3" style="height: 400px;">
+                        <img src="../images/Iced-Pumpkin-Spice-Black-Latte.png" alt="Iced-Pumpkin-Spice-Black-Latte" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                            <h2 class="card-title text-center" style="font-size: 1.3rem;">Iced Pumpkin Spice Black Latte</h2> 
+                            <p class="card-text text-center">RM 12.00</p>
+                            <button class="btn btn-success mt-auto" style="position: relative;" onclick="addToOrder('Iced-Pumpkin-Spice-Black-Latte', 12.00)">Buy now</button>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-3">
-                            <img src="../images/Iced-Rosie-Latte.png" alt="Mocha" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <h2 class="card-title text-center">Mocha</h2>
-                                <p class="card-text text-center">$4.00</p>
-                                <button class="btn btn-success" onclick="addToOrder('Mocha', 4.00)">Add to Order</button>
-                            </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-3" style="height: 400px;">
+                        <img src="../images/Iced-Pumpkin-Spice-Latte.png" alt="Iced-Pumpkin-Spice-Latte" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                            <h2 class="card-title text-center" style="font-size: 1.3rem;">Iced Pumpkin Spice Latte</h2> 
+                            <p class="card-text text-center">RM 7.00</p>
+                            <button class="btn btn-success mt-auto" style="position: relative;" onclick="addToOrder('Iced-Pumpkin-Spice-Latte', 7.00)">Buy now</button>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card mb-3">
-                            <img src="../images/Iced-Rosie-Latte.png" alt="Mocha" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <h2 class="card-title text-center">Mocha</h2>
-                                <p class="card-text text-center">$4.00</p>
-                                <button class="btn btn-success" onclick="addToOrder('Mocha', 4.00)">Add to Order</button>
-                            </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-3" style="height: 400px;">
+                        <img src="../images/Iced-Tarik-Milk-Tea.png" alt="Iced-Tarik-Milk-Tea" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                            <h2 class="card-title text-center" style="font-size: 1.3rem;">Iced Tarik Milk Tea</h2> 
+                            <p class="card-text text-center">RM 4.00</p>
+                            <button class="btn btn-success mt-auto" style="position: relative;" onclick="addToOrder('Iced-Tarik-Milk-Tea', 4.00)">Buy now</button>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-3" style="height: 400px;">
+                        <img src="../images/Mango-Frappé.png" alt="Mango-Frappé" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                            <h2 class="card-title text-center" style="font-size: 1.3rem;">Mango Frappé</h2> 
+                            <p class="card-text text-center">RM 8.00</p>
+                            <button class="btn btn-success mt-auto" style="position: relative;" onclick="addToOrder('Mango-Frappé', 8.00)">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-3" style="height: 400px;">
+                        <img src="../images/Pearl-Sugar-Waffle.png" alt="Pearl-Sugar-Waffle" class="card-img-top" style="height: 200px; width: 130px; margin: auto;">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-between">
+                            <h2 class="card-title text-center" style="font-size: 1.3rem;">Pearl Sugar Waffle</h2> 
+                            <p class="card-text text-center">RM 5.00</p>
+                            <button class="btn btn-success mt-auto" style="position: relative;" onclick="addToOrder('Pearl-Sugar-Waffle', 5.00)">Buy now</button>
+                        </div>
+                    </div>
+                </div>
+
                 </div>
             </div>
             <div class="col-md-3"> <!-- Order List Column -->
@@ -122,7 +151,7 @@
                     </div>
                     <div class="card-body p-5">
                         <ul class="list-group" id="orderList"></ul>
-                        <p id="totalAmount" class="mt-3">Total: $0.00</p>
+                        <p id="totalAmount" class="mt-3">Total: RM 0.00</p>
                     </div>
                 </div>
             </div>

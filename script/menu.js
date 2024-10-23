@@ -6,10 +6,10 @@ function addToOrder(coffeeName, price) {
 
     // Create a new list item for the order
     const listItem = document.createElement('li');
-    listItem.textContent = `${coffeeName}: $${price.toFixed(2)}`;
+    listItem.textContent = `${coffeeName}: RM${price.toFixed(2)}`;
     orderList.appendChild(listItem);
 
     // Update the total amount
     total += price;
-    totalAmount.textContent = `Total: $${total.toFixed(2)}`;
+    totalAmount.textContent = `Total: ${total.toFixed(2)}`;
 }
