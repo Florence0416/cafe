@@ -42,48 +42,66 @@
     <!-- Order History Section -->
     <div class="container mt-5">
         <div class="row">
-            <!-- Order Card Example -->
-            <div class="col-md-6">
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h5>Order #12345</h5>
-                        <small class="text-muted">Date: 22 Oct 2024</small>
-                    </div>
-                    <div class="card-body">
-                        <p><strong>Items:</strong></p>
-                        <ul class="list-unstyled">
-                            <li>Espresso - $4.00</li>
-                            <li>Cappuccino - $5.00</li>
-                        </ul>
-                        <p><strong>Total Amount: </strong>$9.00</p>
-                    </div>
-                    <div class="card-footer text-right">
-                        <a href="menu.php" class="btn btn-primary">Reorder</a>
-                    </div>
-                </div>
-            </div>
+        <?php
+            include '../db/database.php';
+            $query = "SELECT order_num, time, item_id FROM history ORDER BY order_num"; // Ensure orders are in order
+            $result = mysqli_query($conn, $query);
+            $order_count = null;
+            $item = [];
+            $date = null;
 
-            <!-- Another Order Card -->
-            <div class="col-md-6">
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h5>Order #12344</h5>
-                        <small class="text-muted">Date: 20 Oct 2024</small>
-                    </div>
-                    <div class="card-body">
-                        <p><strong>Items:</strong></p>
-                        <ul class="list-unstyled">
-                            <li>Latte - $4.50</li>
-                            <li>Mocha - $5.50</li>
-                        </ul>
-                        <p><strong>Total Amount: </strong>$10.00</p>
-                    </div>
-                    <div class="card-footer text-right">
-                        <a href="menu.php" class="btn btn-primary">Reorder</a>
-                    </div>
-                </div>
-            </div>
-            
+            while ($row = mysqli_fetch_assoc($result)) {
+                if ($order_count === null) {
+                    // First time setting the order count
+                    $order_count = $row["order_num"];
+                    $date = $row["time"];
+                }
+
+                if ($row["order_num"] == $order_count) {
+                    // Same order, add item
+                    $item[] = $row["item_id"];
+                } else {
+                    // New order, output the previous order
+                    output($order_count, $item, $date);
+
+                    // Reset for the new order
+                    $order_count = $row["order_num"];
+                    $item = [$row["item_id"]]; // Start a new list with the current item
+                    $date = $row["time"];
+                }
+            }
+
+            // Ensure to output the last order
+            if (!empty($item)) {
+                output($order_count, $item, $date);
+            }
+
+            function output($order_num, $item, $date) {
+                global $conn;
+                $total = 0;
+                echo "<div class='col-md-6'>";
+                echo "<div class='card mb-4 shadow-sm'>";
+                echo "<div class='card-header'>";
+                echo "<h5>Order #" . $order_num . "</h5>";
+                echo "<small class='text-muted'>Date: " . $date . "</small>";
+                echo "</div>";
+                echo "<div class='card-body'>";
+                echo "<p><strong>Items:</strong></p>";
+                echo "<ul class='list-unstyled'>";
+                foreach ($item as $item_id) {
+                    $q = "SELECT name, price FROM item WHERE id = '$item_id'";
+                    $r = mysqli_query($conn, $q);
+                    $rows = mysqli_fetch_assoc($r);
+                    echo "<li>" . $rows["name"] . " - RM" . $rows["price"] . "</li>";
+                    $total += $rows["price"];
+                }
+                echo "</ul>";
+                echo "<p><strong>Total Amount: </strong>RM" . $total . "</p>";
+                echo "</div>";
+                echo "</div>";
+                echo "</div>";
+            }
+        ?>
         </div>
     </div>
     
