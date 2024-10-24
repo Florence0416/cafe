@@ -152,6 +152,7 @@
                     <div class="card-body p-5">
                         <ul class="list-group" id="orderList"></ul>
                         <p id="totalAmount" class="mt-3">Total: RM 0.00</p>
+                        <button class="btn btn-primary mt-auto" style="position: relative;" onclick="window.location.href='order.php'">Add to order</button>
                     </div>
                 </div>
             </div>

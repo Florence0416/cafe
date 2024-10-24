@@ -58,7 +58,7 @@
                         <p><strong>Total Amount: </strong>$9.00</p>
                     </div>
                     <div class="card-footer text-right">
-                        <a href="#" class="btn btn-primary">Reorder</a>
+                        <a href="menu.php" class="btn btn-primary">Reorder</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                         <p><strong>Total Amount: </strong>$10.00</p>
                     </div>
                     <div class="card-footer text-right">
-                        <a href="#" class="btn btn-primary">Reorder</a>
+                        <a href="menu.php" class="btn btn-primary">Reorder</a>
                     </div>
                 </div>
             </div>
