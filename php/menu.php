@@ -186,7 +186,9 @@ if (!isset($_SESSION['order'])) {
                     $_SESSION['order'] = [];
     
                     // Respond with success status
-                    echo json_encode(['status' => 'success']);
+                    // Redirect to order.php after a successful order submission
+                    echo "<script>window.location.href = 'order.php';</script>";
+                    exit();
                 } else {
                     echo json_encode(['status' => 'error', 'message' => 'Your cart is empty. Please add items before placing an order.']);
                 }
