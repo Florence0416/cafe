@@ -96,7 +96,7 @@ if (!isset($_SESSION['order'])) {
                             while ($row = mysqli_fetch_assoc($result)) {
                                 echo "<div class=\"col-md-4\">";
                                     echo "<div class=\"card mb-3\" style=\"height: 400px;\">";
-                                        echo "<img src=\"" . $row['img'] . "\" alt=\"Ro-Ro-Rosie-Frappe\" class=\"card-img-top\" style=\"height: 200px; width: 130px; margin: auto;\">";
+                                        echo "<img src=\"image.php?id=" . $row['id'] . "\" alt=\"Ro-Ro-Rosie-Frappe\" class=\"card-img-top\" style=\"height: 200px; width: 130px; margin: auto;\">";
                                         echo "<div class=\"card-body d-flex flex-column align-items-center justify-content-between\">";
                                             echo "<h2 class=\"card-title text-center\" style=\"font-size: 1.3rem;\">" . $row["name"] ."</h2> ";
                                             echo "<p class=\"card-text text-center\">RM " . $row["price"] . "</p>";
@@ -104,7 +104,7 @@ if (!isset($_SESSION['order'])) {
                                         echo "</div>";
                                     echo "</div>";
                                 echo "</div>";
-                            }
+                            }                            
                         ?>
                     </div>
                 </div>
