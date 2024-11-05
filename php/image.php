@@ -18,4 +18,3 @@ if (isset($_GET['id'])) {
     header("Content-Type: image/png");
     echo $imgData;
 }
-?>
