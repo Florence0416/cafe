@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "cafe";
+$servername = "cafedb.c9wzptup7ujf.us-east-1.rds.amazonaws.com";
+$username = "admin";
+$password = "iop1029i";
+$dbname = "cafedb";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
