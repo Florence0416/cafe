@@ -1,5 +1,10 @@
 <?php
-$servername = "cafedb.c9wzptup7ujf.us-east-1.rds.amazonaws.com";
+// $servername = "cafedb.c9wzptup7ujf.us-east-1.rds.amazonaws.com";
+// $username = "admin";
+// $password = "iop1029i";
+// $dbname = "cafedb";
+
+$servername = "localhost";
 $username = "admin";
 $password = "iop1029i";
 $dbname = "cafedb";

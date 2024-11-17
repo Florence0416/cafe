@@ -9,7 +9,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS (optional) -->
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 
     
 </head>
@@ -25,13 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Home</a>
+                        <a class="nav-link" href="php/index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="menu.php">Menu</a>
+                        <a class="nav-link" href="php/menu.php">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="order.php">Order</a>
+                        <a class="nav-link" href="php/order.php">Order</a>
                     </li>
                 </ul>
             </div>
