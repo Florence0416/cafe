@@ -1,3 +1,9 @@
+<script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+
 <?php
 session_start(); // Start the session
 include '../db/database.php';
@@ -76,6 +82,9 @@ if (!isset($_SESSION['order'])) {
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="order.php">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.php">Products</a>
                     </li>
                 </ul>
             </div>

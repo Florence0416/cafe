@@ -31,6 +31,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="order.php">Order</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.php">Products</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -92,8 +95,12 @@
                     $q = "SELECT name, price FROM item WHERE id = '$item_id'";
                     $r = mysqli_query($conn, $q);
                     $rows = mysqli_fetch_assoc($r);
-                    echo "<li>" . $rows["name"] . " - RM" . $rows["price"] . "</li>";
-                    $total += $rows["price"];
+                    if (isset($rows["name"]) && isset($rows["price"])) {
+                        echo "<li>" . $rows["name"] . " - RM" . $rows["price"] . "</li>";
+                        $total += $rows["price"];
+                    } else {
+                        echo "<li>Item not available</li>";  // Fallback if keys don't exist
+                    }
                 }
                 echo "</ul>";
                 echo "<p><strong>Total Amount: </strong>RM" . $total . "</p>";

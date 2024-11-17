@@ -33,6 +33,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="php/order.php">Order</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="php/products.php">Products</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -64,21 +67,21 @@
                 <div class="menu-item text-center">
                     <h3>Espresso</h3>
                     <p>A rich, full-bodied coffee to kickstart your day.</p>
-                    <p><strong>$3.00</strong></p>
+                    <p><strong>RM3.00</strong></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="menu-item text-center">
                     <h3>Latte</h3>
                     <p>A smooth blend of milk and espresso for a creamy treat.</p>
-                    <p><strong>$4.50</strong></p>
+                    <p><strong>RM4.50</strong></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="menu-item text-center">
                     <h3>Mocha</h3>
                     <p>Chocolate meets coffee for an indulgent experience.</p>
-                    <p><strong>$5.00</strong></p>
+                    <p><strong>RM5.00</strong></p>
                 </div>
             </div>
         </div>
@@ -88,21 +91,21 @@
                 <div class="menu-item text-center">
                     <h3>Espresso</h3>
                     <p>A rich, full-bodied coffee to kickstart your day.</p>
-                    <p><strong>$3.00</strong></p>
+                    <p><strong>RM3.00</strong></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="menu-item text-center">
                     <h3>Latte</h3>
                     <p>A smooth blend of milk and espresso for a creamy treat.</p>
-                    <p><strong>$4.50</strong></p>
+                    <p><strong>RM4.50</strong></p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="menu-item text-center">
                     <h3>Mocha</h3>
                     <p>Chocolate meets coffee for an indulgent experience.</p>
-                    <p><strong>$5.00</strong></p>
+                    <p><strong>RM5.00</strong></p>
                 </div>
             </div>
         </div>
