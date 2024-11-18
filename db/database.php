@@ -5,8 +5,8 @@ $password = "iop1029i";
 $dbname = "cafedb";
 
 // $servername = "localhost";
-// $username = "admin";
-// $password = "iop1029i";
+// $username = "root";
+// $password = "";
 // $dbname = "cafedb";
 
 // Create connection
