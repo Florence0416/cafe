@@ -1,5 +1,5 @@
 <?php
-$servername = "";
+$servername = "cafe-db.c3oa84eysj7t.us-east-1.rds.amazonaws.com";
 $username = "admin";
 $password = "iop1029i";
 $dbname = "cafedb";
